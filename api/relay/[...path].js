@@ -1,5 +1,5 @@
 // api/relay/[...path].js  — Bybitリレー（GET/HEADのみ）
-export const config = { runtime: 'nodejs18.x', regions: ['hnd1'] }; // 東京リージョン固定
+export const config = { runtime: 'nodejs', regions: ['hnd1'] }; // 東京リージョン固定
 
 export default async function handler(req, res) {
   if (req.method !== 'GET' && req.method !== 'HEAD') {
